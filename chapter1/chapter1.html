@@ -1,0 +1,49 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html charset=utf-8 ">
+	<title>JS Loan Calculator</title>
+	<script type="text/javascript" src="fun1.js"></script>
+</head>
+<body>
+	<form name="loandata">
+		<table>
+			<tr><td colspan="3"><b>Enter the loan information:</b></td></tr>
+			<tr>
+				<td>1)</td>
+				<td>Amount of the Loan(any currency)(贷款本金):</td>
+				<td><input type="text" name="principal" size="12" onchange="calculate();"></input></td>
+			</tr>
+			<tr>
+				<td>2)</td>
+				<td>Annual percentage rate of interest(年利率):</td>
+				<td><input type="text" name="interest" size="12" onchange="calculate();"></input></td>
+			</tr>
+			<tr>
+				<td>3)</td>
+				<td>Repayment period in years(年限):</td>
+				<td><input type="text" name="years" size="12" onchange="calculate();"></input></td>
+			</tr>
+			<tr><td>
+				<input type="button" value="Calculate" onclick="calculate();"></input>
+			</td></tr>
+			<tr><td colspan="3"><b>Payment Information:</b></td></tr>
+			<tr>
+				<td>4)</td>
+				<td>Your monthly payment will be(每月应还):</td>
+				<td><input type="text" name="payment" size="12"></input></td>
+			</tr>
+			<tr>
+				<td>5)</td>
+				<td>Your total payment will be(总还款):</td>
+				<td><input type="text" name="total" size="12"></input></td>
+			</tr>
+			<tr>
+				<td>4)</td>
+				<td>Your total interest payments will be(总利息):</td>
+				<td><input type="text" name="totalinterest" size="12"></input></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
