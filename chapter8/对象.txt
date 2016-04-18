@@ -1,0 +1,1 @@
+1.JavaScript的函数是对象

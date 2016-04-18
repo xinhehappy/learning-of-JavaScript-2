@@ -1,0 +1,27 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>sort</title>
+	<script type="text/javascript">
+		function sortNum(){
+		var a = new Array(3,44,56,2,222);
+		a.sort();
+		for(var i=0;i<a.length;i++)
+		{
+			document.write(a[i]+"</br>");
+		}
+		}
+		// a.sort(function(a,b){return a-b;});
+		// for(var i=0;i<a.length;i++)
+		// {
+		// 	document.write(a[i]+"</br>");
+		// }
+	</script>
+</head>
+<body>
+
+	<form>
+		<input type="button" onclick="sortNum();" value="sort"></input>
+	</form>
+</body>
+</html>
